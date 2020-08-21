@@ -52,6 +52,7 @@ class App extends Component {
         <div className="row " >
           {this.state.members.map((member, id) => <ul key={id}><li>
             <a variant="primary" onClick={() => this.handleShow(member)}>{member.real_name}<br /></a><br />
+            <a  href="#" variant="primary" onClick={() => this.handleShow(member)}>{member.real_name}<br /></a><br />
           </li></ul>
           )}
 
